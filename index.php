@@ -10,7 +10,7 @@
     <!-- L'en-tête -->
     
     <header>
-       <a href="bonjour.php?nom=Dupont&amp;prenom=Jean">Dis-moi bonjour !</a>
+       <a href="bonjour.php?nom=Morgane&amp;prenom=Davy&amp;repeter=1">Dis-moi bonjour !</a>
     </header>
     
     <!-- Le menu via une inclusion -->
