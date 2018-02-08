@@ -23,7 +23,7 @@
         <h1>Bonjour !</h1>
         
         <p>
-            Ton prénom est : <?php echo $_POST['prenom']; ?> !
+            Ton prénom est : <?php echo htmlspecialchars($_POST['prenom']); ?> !
         </p>
 
         <p>
