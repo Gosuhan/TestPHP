@@ -14,6 +14,7 @@
                 // On peut valider le fichier et le stocker définitivement
                 move_uploaded_file($_FILES['monfichier']['tmp_name'], 'uploads/' .  // J'ai créé un dossier "uploads" dans TestPHP !!!
                 basename($_FILES['monfichier']['name']));
+                // OU: move_uploaded_file($_FILES['monfichier']['tmp_name'], 'uploads/changeName.jpg'); SI CHGT NOM FICHIER TELECHARGE
                 echo "L'envoi de votre fichier a bien été effectué !";
             }
         }
