@@ -28,6 +28,13 @@
                 <input type="submit" name="valider" />
             </p>
         </form>
+
+        <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
+            <p>Formulaire d'envoi de fichier
+            <input type="file" name="monfichier" />
+            <input type="submit" value="Envoyer le fichier" />
+            </p>
+        </form>
     </div>
     
     <!-- Le pied de page -->

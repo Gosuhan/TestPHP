@@ -24,7 +24,7 @@
         
         <p>
             Ton prénom est : <?php echo htmlspecialchars($_POST['prenom']); ?> ! 
-            <!-- ou fonction "strip_tags" à la place de "htmlspecialchars" pour retirer les balises -->
+            <!-- ou fonction "strip_tags" à la place de "htmlspecialchars" pour retirer les balises au lieu de les afficher -->
         </p>
 
         <p>
