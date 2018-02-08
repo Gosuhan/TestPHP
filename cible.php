@@ -23,7 +23,8 @@
         <h1>Bonjour !</h1>
         
         <p>
-            Ton prénom est : <?php echo htmlspecialchars($_POST['prenom']); ?> !
+            Ton prénom est : <?php echo htmlspecialchars($_POST['prenom']); ?> ! 
+            <!-- ou fonction "strip_tags" à la place de "htmlspecialchars" pour retirer les balises -->
         </p>
 
         <p>
