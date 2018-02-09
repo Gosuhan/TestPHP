@@ -3,7 +3,8 @@
 try
 {
     // On se connecte à MySQL
-    $bdd = new PDO('mysql:host=localhost; dbname=test2; charset=utf8', 'root', 'root');
+    $bdd = new PDO('mysql:host=localhost; dbname=test2; charset=utf8', 'root', 'root'/*)*/,
+    array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); // Ajout paramètre à "$bdd" pour activer les erreurs
 }
 catch (Exception $e)
 {
@@ -15,8 +16,6 @@ catch (Exception $e)
 
 // On récupère tout le contenu de la table jeux_video
 $reponse = $bdd->query('SELECT * FROM jeux_video');
-
-
 
 // On affiche chaque entrée une à une
 while ($donnees = $reponse->fetch()) {
