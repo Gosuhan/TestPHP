@@ -27,8 +27,8 @@ while ($donnees = $reponse->fetch()) {
         <?php echo $donnees['prix']; ?> euro !<br />
         Ce jeu fonctionne sur <?php echo $donnees['console']; ?> et on peut y jouer à 
         <?php echo $donnees['nbre_joueurs_max']; ?> au maximum<br />
-        <?php $donnees['possesseur']; ?> a laissé ces commentaires sur 
-        <?php $donnees['nom']; ?> : <em><?php $donnees['commentaires']; ?></em>
+        <?php echo $donnees['possesseur']; ?> a laissé ces commentaires sur 
+        <?php echo $donnees['nom']; ?> : <em><?php echo $donnees['commentaires']; ?></em>
         </p>
     <?php
     }
